@@ -22,9 +22,14 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
-                use: [
-               'file-loader',
-                ],
+                use: {
+                    loader: "file-loader",
+                    options: {
+                        esModule: false, // https://github.com/webpack-contrib/html-loader/issues/203
+                        name: "[name].[hash].[ext]",
+                        outputPath: "images"
+                    }
+                }
             },
             {
                 test: /\.scss$/,
