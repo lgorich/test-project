@@ -23,8 +23,8 @@ module.exports = {
             {
                 test: /\.(png|svg|jpg|gif)$/,
                 use: [
-                    'file-loader'
-                ]
+               'file-loader',
+                ],
             },
             {
                 test: /\.scss$/,
@@ -46,4 +46,4 @@ module.exports = {
             chunkFilename: "[id].css"
         })
     ]
-}
+};
