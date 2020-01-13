@@ -21,7 +21,7 @@ const particlesJson = {
         "shape": {
             "type": "image",
             "image": {
-                "src": "src/assets/images/aerolax.png"
+                "src": "https://i.ibb.co/vVq8tzH/aerolax.png"
             },
             "polygon": {
                 "nb_sides": 5
